@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication3.Site1" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script src="Scripts/jquery-2.2.3.js"></script>
+    <asp:ContentPlaceHolder runat="server" ID="head_placeholder"></asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="border-bottom:solid 20px rgb(0, 107, 107); margin-bottom:15px;">
+                <img class="logo" src="\images\ennlogo_small.gif" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <img src="\images\vbaysm.gif" />
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="http://ennprod.covdnssrv.co.volusia.fl.us/default.html">ENN HOME</a></li>
+                    <li><a href="http://ennprod.covdnssrv.co.volusia.fl.us/safeorg.htm">DIRECTORY ASSISTANCE</a></li>
+                    <li class="current_tab"><a href="http://ennprod.covdnssrv.co.volusia.fl.us/vbay/defaultnew.asp">V-BAY HOME</a></li>
+                    <li><a href="#">CREATE AN AD</a></li>
+                    <li><a href="#">V-BAY RULES</a></li>
+                    <li><a href="#">CONTACT V-BAY ADMINISTRATOR</a></li>
+                    <li><a href="#">V-BAY ADMINISTRATION</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <asp:ContentPlaceHolder runat="server" ID="content_placeholder"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

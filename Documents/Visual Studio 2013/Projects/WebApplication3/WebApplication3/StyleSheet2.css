@@ -1,0 +1,13 @@
+﻿body {
+}
+.title, .steps{
+    color:#63BEE7;
+}
+
+.steps{
+    display:inline-block;
+}
+
+.warning{
+    color:red;
+}
